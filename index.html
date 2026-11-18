@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AES3 perfboard workshop</title>
+  <link rel="icon" href="./playground/favicon.ico">
+  <link rel="stylesheet" href="./workshop.css">
+</head>
+<body>
+  <header class="masthead">
+    <div><p class="eyebrow">USB → AES3</p><h1>Perfboard workshop</h1></div>
+    <a id="plan" href="?guide=plan">Project plan</a>
+  </header>
+  <nav id="modules" aria-label="Build modules"></nav>
+  <main aria-busy="true">
+    <section class="guide" aria-label="Build guide">
+      <div class="bar"><span>Build guide</span><a id="markdown" download>Download Markdown</a></div>
+      <article id="guide"></article>
+    </section>
+    <section class="model" aria-label="3D layout" hidden>
+      <div class="bar"><span>3D layout</span><a id="scad" download>Download SCAD</a></div>
+      <iframe id="playground" title="OpenSCAD 3D layout" allow="fullscreen; clipboard-write" allowfullscreen></iframe>
+      <p class="hint">Drag to rotate. Open the customizer to toggle wiring and labels.</p>
+    </section>
+    <p id="status" role="status"></p>
+  </main>
+  <script type="module" src="./workshop.mjs"></script>
+</body>
+</html>
